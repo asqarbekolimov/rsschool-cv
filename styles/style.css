@@ -166,3 +166,23 @@ body {
 	margin: 0 60px;
 	background-color: #f1f1f1;
 }
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #3e67ab;
+	color: #fff;
+	padding: 15px 30px;
+	text-align: center;
+}
+.footer__link a {
+	text-decoration: none;
+	color: #fff;
+}
+.footer__link img {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.footer__link img:last-child {
+	width: 115px;
+}
