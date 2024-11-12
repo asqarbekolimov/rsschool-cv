@@ -1,76 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV | Asqarbek Olimov</title>
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-  <div class="wrapper">
-    <div class="container">
-      <div class="heading">
-        <h1>Asqarbek Olimov, Frontend Developer</h1>
-        <p>
-          <a href="https://maps.app.goo.gl/aiGmju3i1btyMMZv6">Tashkent, Uzbekistan,</a>
-          <a href="mailto:info@asqarbek.uz">info@asqarbek.uz,</a>
-          <a href="tel:+998500088708">+998500088708</a>
-        </p>
-      </div>
-      <div class="hr"></div>
-      <h2>Profile</h2>
-      <div class="section">
-        <div class="section-title">
-        </div>
-        <div class="section-description">
-          <p>I'm Asqarbek, currently a frontend developer. I have more than 1 year of experience working with the
-            ReactJS
-            library,
-            and I specialize in developing web and mobile applications using ReactJS.</p>
-        </div>
-      </div>
-      <div class="hr"></div>
-      <h2>Education</h2>
-      <div class="section">
-        <div class="section-title">
-          Sep 2023 — Aug 2028
-        </div>
-        <div class="section-description">
-          <h3>University of Tashkent for Applied Sciences</h3>
-          <p>Computer Engineer</p>
-        </div>
-      </div>
-      <div class="hr"></div>
-      <h2>Employment</h2>
-      <div class="section">
-        <div class="section-title">
-          March 2024 — Present
-        </div>
-        <div class="section-description">
-          <h3>Fiverr Freelancer</h3>
-          <p>ReactJS Frontend Developer</p>
-        </div>
-      </div>
-      <div class="hr"></div>
-      <h2>Skills</h2>
-      <div class="section">
-        <div class="section-title">
-        </div>
-        <div class="section-description">
-          <div class="skills">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>ReactJS</p>
-            <p>Figma</p>
-            <p>Git</p>
-            <p>Github</p>
-          </div>
-        </div>
-      </div>
-      <div class="hr"></div>
-    </div>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asqarbek Olimov CV</title>
+    <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
 
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+          <div class="logo">
+            <a href="#">
+              <img src="./assets/images/logo.svg" alt="logo">
+            </a>
+          </div>
+          <ul class="nav__lists">
+            <li class="nav__list-item"><a href="#about">About</a></li>
+            <li class="nav__list-item"><a href="#skills">Skills</a></li>
+            <li class="nav__list-item"><a href="#education">Education</a></li>
+            <li class="nav__list-item"><a href="#projects">Projects</a></li>
+            <li class="nav__list-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="left__side">
+          <figure class="avatar">
+            <img src="./assets/images/me.jpg" alt="">
+          </figure>
+          <section id="contact" class="contact">
+            <h2 class="heading__text">Contact</h2>
+            <ul class="contact__list">
+              <li>
+                Mail: <br>
+                <a href="mailto:info@asqarbekdev.uz">info@asqarbekdev.uz</a>
+              </li>
+              <li>
+                Github: <br>
+                <a href="https://github.com/asqarbekolimov">@asqarbekolimov</a>
+              </li>
+              <li>
+                Telegram: <br>
+                <a href="https://asqarb3k.t.me">@asqarb3k</a>
+              </li>
+            </ul>
+          </section>
+          <section class="education" id="education">
+            <h2 class="heading__text">Education</h2>
+            <ul class="education__list">
+              <li>
+                <h3>2021 - 2022</h3>
+                <p>Frontend Development</p>
+                <p>Mohirdev</p>
+              </li>
+              <li>
+                <h3>2023 - 2028</h3>
+                <p>Uzbekistan State University of World Languages</p>
+                <p>Computer Engineering</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="right__side">
+          <section class="title">
+            <h1 class="name">Asqarbek Olimov</h1>
+            <p>Frontend Developer</p>
+          </section>
+          <section class="about-me" id="about">
+            <h2 class="heading__text">About</h2>
+            <p>
+              I have a background in information technology, with a focus on frontend development and UI design. I am the type of person who seizes every opportunity to learn something new. That is why I enjoy challenges. From there, I'm under pressure to learn quickly and gain a lot of new experience. <br>
+              Since childhood, I have had a predisposition to work with electronics and computers. I like to disassemble, assemble and configure something. I can build, configure, solve problems with computers.
+            </p>
+          </section>
+          <section class="skills" id="skills">
+            <h2 class="heading__text">Skills</h2>
+            <ol class="skills__list">
+              <li>Engineering</li>
+              <li>Knowledge about ServiceNow administration.</li>
+              <li>Figma, Git, Webpack</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SCSS</li>
+              <li>Tailwind CSS</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Nodejs basics</li>
+              <li>English - A2.</li>
+            </ol>
+          </section>
+          <section class="code" id="code">
+            <h2 class="heading__text">Code</h2>
+            <pre>
+              <code>
+                let hardWork;
+                
+                if(hardWork == true){
+                alert("Become the best developer")
+                }else{
+                alert("You will never be the best programmer")
+                }
+              </code>
+            </pre>
+          </section>
+          <section class="code" id="projects">
+            <h2 class="heading__text">Projects</h2>
+            <div class="projects__container">
+              <div class="project_card">
+                <img class="project_image" src="./assets/images/pr-1.png" alt="">
+                <h3 class="project_title">Token Creator</h3>
+                <div class="project_link">
+                  <a href="https://token-creator-six.vercel.app/" target="_blank">Demo</a>
+                </div>
+              </div>
+              <div class="project_card">
+                <img class="project_image" src="./assets/images/pr-2.png" alt="">
+                <h3 class="project_title">CMS Blog</h3>
+                <div class="project_link">
+                  <a href="https://blog.asqarbekdev.uz/" target="_blank">Demo</a>
+                </div>
+              </div>
+              <div class="project_card">
+                <img class="project_image" src="./assets/images/pr-3.png" alt="">
+                <h3 class="project_title">Open Case</h3>
+                <div class="project_link">
+                  <a href="https://asqarbekdev.uz/projects" target="_blank">Demo</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__link">
+          <a href="https://github.com/asqarbekolimov">
+            <img src="./assets/images/github-logo.svg" alt="github"><span>Github</span>
+          </a>
+        </div>
+        <p>© 2024 The Rolling Scopes</p>
+        <div class="footer__link">
+          <a href="https://rs.school/courses/javascript">
+            <img src="./assets/images/rs_school_js.svg" alt="github">
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
