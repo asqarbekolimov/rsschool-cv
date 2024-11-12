@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.container {
+	width: 100%;
+	padding: 35px 40px;
+}
+
+.heading {
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+	margin-bottom: 40px;
+}
+
+.heading h1 {
+	color: #212121;
+	font-weight: 700;
+	text-align: center;
+}
+.heading p {
+	text-align: center;
+}
+.heading p a {
+	color: #212121;
+	font-weight: 400;
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+.hr {
+	border: 1px solid rgb(0, 0, 0);
+	opacity: 0.05;
+}
