@@ -1,11 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asqarbek Olimov CV</title>
-    <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.svg"
+      type="image/x-icon"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="./css/style.css">
   </head>
 
@@ -18,6 +25,12 @@
               <img src="./assets/images/logo.svg" alt="logo">
             </a>
           </div>
+          <input type="checkbox" id="menu-toggle" class="menu-toggle">
+          <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
           <ul class="nav__lists">
             <li class="nav__list-item"><a href="#about">About</a></li>
             <li class="nav__list-item"><a href="#skills">Skills</a></li>
@@ -28,10 +41,108 @@
         </nav>
       </header>
       <main class="main">
+        <div class="right__side">
+          <section class="title">
+            <figure class="avatar">
+              <img src="./assets/images/me.jpg" alt="avatar">
+            </figure>
+            <div>
+              <h1 class="name">Asqarbek Olimov</h1>
+              <p>Frontend Developer</p>
+            </div>
+          </section>
+          <section class="about-me" id="about">
+            <h2 class="heading__text">About</h2>
+            <p>
+              I have a background in information technology, with a focus on
+              frontend development and UI design. I am the type of person who
+              seizes every opportunity to learn something new. That is why I
+              enjoy challenges. From there, I'm under pressure to learn quickly
+              and gain a lot of new experience. <br>
+              Since childhood, I have had a predisposition to work with
+              electronics and computers. I like to disassemble, assemble and
+              configure something. I can build, configure, solve problems with
+              computers.
+            </p>
+          </section>
+          <section class="skills" id="skills">
+            <h2 class="heading__text">Skills</h2>
+            <ol class="skills__list">
+              <li>Engineering</li>
+              <li>Knowledge about ServiceNow administration.</li>
+              <li>Figma, Git, Webpack</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SCSS</li>
+              <li>Tailwind CSS</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Nodejs basics</li>
+              <li>English - B1.</li>
+            </ol>
+          </section>
+          <section class="code" id="code">
+            <h2 class="heading__text">Code</h2>
+            <pre>
+              <code>
+                let hardWork;
+                if(hardWork == true){
+                alert("Become the best developer")
+                }else{
+                alert("You will never be the best programmer")
+                }
+              </code>
+            </pre>
+          </section>
+          <section class="code" id="projects">
+            <h2 class="heading__text">Projects</h2>
+            <div class="projects__container">
+              <div class="project_card">
+                <img
+                  class="project_image"
+                  src="./assets/images/pr-1.png"
+                  alt="project image"
+                >
+                <h3 class="project_title">Token Creator</h3>
+                <div class="project_link">
+                  <a
+                    href="https://token-creator-six.vercel.app/"
+                    target="_blank"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+              <div class="project_card">
+                <img
+                  class="project_image"
+                  src="./assets/images/pr-2.png"
+                  alt="project image"
+                >
+                <h3 class="project_title">CMS Blog</h3>
+                <div class="project_link">
+                  <a href="https://blog.asqarbekdev.uz/" target="_blank"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+              <div class="project_card">
+                <img
+                  class="project_image"
+                  src="./assets/images/pr-3.png"
+                  alt="project image"
+                >
+                <h3 class="project_title">Open Case</h3>
+                <div class="project_link">
+                  <a href="https://asqarbekdev.uz/projects" target="_blank"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
         <div class="left__side">
-          <figure class="avatar">
-            <img src="./assets/images/me.jpg" alt="">
-          </figure>
           <section id="contact" class="contact">
             <h2 class="heading__text">Contact</h2>
             <ul class="contact__list">
@@ -65,83 +176,16 @@
             </ul>
           </section>
         </div>
-        <div class="right__side">
-          <section class="title">
-            <h1 class="name">Asqarbek Olimov</h1>
-            <p>Frontend Developer</p>
-          </section>
-          <section class="about-me" id="about">
-            <h2 class="heading__text">About</h2>
-            <p>
-              I have a background in information technology, with a focus on frontend development and UI design. I am the type of person who seizes every opportunity to learn something new. That is why I enjoy challenges. From there, I'm under pressure to learn quickly and gain a lot of new experience. <br>
-              Since childhood, I have had a predisposition to work with electronics and computers. I like to disassemble, assemble and configure something. I can build, configure, solve problems with computers.
-            </p>
-          </section>
-          <section class="skills" id="skills">
-            <h2 class="heading__text">Skills</h2>
-            <ol class="skills__list">
-              <li>Engineering</li>
-              <li>Knowledge about ServiceNow administration.</li>
-              <li>Figma, Git, Webpack</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>SCSS</li>
-              <li>Tailwind CSS</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>React</li>
-              <li>Nodejs basics</li>
-              <li>English - A2.</li>
-            </ol>
-          </section>
-          <section class="code" id="code">
-            <h2 class="heading__text">Code</h2>
-            <pre>
-              <code>
-                let hardWork;
-                if(hardWork == true){
-                alert("Become the best developer")
-                }else{
-                alert("You will never be the best programmer")
-                }
-              </code>
-            </pre>
-          </section>
-          <section class="code" id="projects">
-            <h2 class="heading__text">Projects</h2>
-            <div class="projects__container">
-              <div class="project_card">
-                <img class="project_image" src="./assets/images/pr-1.png" alt="">
-                <h3 class="project_title">Token Creator</h3>
-                <div class="project_link">
-                  <a href="https://token-creator-six.vercel.app/" target="_blank">Demo</a>
-                </div>
-              </div>
-              <div class="project_card">
-                <img class="project_image" src="./assets/images/pr-2.png" alt="">
-                <h3 class="project_title">CMS Blog</h3>
-                <div class="project_link">
-                  <a href="https://blog.asqarbekdev.uz/" target="_blank">Demo</a>
-                </div>
-              </div>
-              <div class="project_card">
-                <img class="project_image" src="./assets/images/pr-3.png" alt="">
-                <h3 class="project_title">Open Case</h3>
-                <div class="project_link">
-                  <a href="https://asqarbekdev.uz/projects" target="_blank">Demo</a>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
       </main>
       <footer class="footer">
         <div class="footer__link">
           <a href="https://github.com/asqarbekolimov">
-            <img src="./assets/images/github-logo.svg" alt="github"><span>Github</span>
+            <img src="./assets/images/github-logo.svg" alt="github"><span
+              >Github</span
+            >
           </a>
         </div>
-        <p>© 2025 The Rolling Scopes</p>
+        <p>© 2026 The Rolling Scopes</p>
         <div class="footer__link">
           <a href="https://rs.school/courses/short-track">
             <img src="./assets/images/rs_school_js.svg" alt="github">
