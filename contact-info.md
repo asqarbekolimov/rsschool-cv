@@ -14,4 +14,4 @@
 - Monday, Wednesday, Friday, 19:00-21:00 UTC+5
 
 **Additional Notes:**
-I need a little time to prepare. I would be glad if the interview could be scheduled after April 10th.
+I need some time to prepare. I've preferred that the interview be scheduled after April 10th.
