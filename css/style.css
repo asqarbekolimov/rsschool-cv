@@ -80,6 +80,7 @@ main {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 48px;
+  padding: 0 16px;
 }
 
 .dev_avatar-section {
