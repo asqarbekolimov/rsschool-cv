@@ -10,7 +10,7 @@
       type="image/x-icon"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
@@ -22,11 +22,11 @@
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="">Code Example</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Education</a></li>
-          <li><a href="">Language</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#code">Code Example</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#languages">Language</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -38,13 +38,13 @@
             src="./assets/images/me.jpg"
             alt="Asqarbek Olimov"
           />
-          <h2 class="dev_name">Asqarbek Olimov</h2>
+          <h1 class="dev_name">Asqarbek Olimov</h1>
           <p class="dev_major">Frontend Developer</p>
         </div>
       </section>
-      <section id="about" class="about-section">
+      <section class="about-section" id="about">
         <div class="container">
-          <h3 class="heading-3">About me</h3>
+          <h2 class="heading-2">About me</h2>
           <p class="about_info">
             I have a background in information technology, with a focus on
             frontend development and UI design. I am the type of person who
@@ -60,11 +60,11 @@
           </p>
         </div>
       </section>
-      <section id="skills" class="skills-section">
+      <section class="skills-section" id="skills">
         <div class="container">
-          <h3 class="heading-3">skills</h3>
-          <div class="skills_card-container">
-            <div class="skills_card">
+          <h2 class="heading-2">skills</h2>
+          <div class="card-container">
+            <div class="card">
               <div class="skill_type">Frontend</div>
               <ul class="skill_list">
                 <li>HTML/CSS</li>
@@ -75,7 +75,7 @@
                 <li>Tailwind CSS</li>
               </ul>
             </div>
-            <div class="skills_card">
+            <div class="card">
               <div class="skill_type">Backend & Data</div>
               <ul class="skill_list">
                 <li>Node.js</li>
@@ -85,7 +85,7 @@
                 <li>Drizzle ORM</li>
               </ul>
             </div>
-            <div class="skills_card">
+            <div class="card">
               <div class="skill_type">Tools</div>
               <ul class="skill_list">
                 <li>Git</li>
@@ -97,6 +97,155 @@
           </div>
         </div>
       </section>
+      <section class="code-section" id="code">
+        <div class="container">
+          <h2 class="heading-2">Code Example</h2>
+          <div class="task_name">Find the Unique Number</div>
+          <div class="card code-card">
+            <pre><code>let hardWork;
+
+if (hardWork === true) {
+  alert("Become the best developer");
+} else {
+  alert("You will never be the best programmer");
+}</code></pre>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="container">
+          <h2 class="heading-2">Projects</h2>
+
+          <div class="card-container">
+            <div class="card">
+              <h2 class="project_title">Coffee House Landing Page</h2>
+              <p class="project_description">
+                An interactive and fully responsive promotional landing page
+                with drink category tabs, smooth carousel animations, and a
+                modal window for customizable orders.
+              </p>
+              <div class="projects_skills">
+                <span>HTML5</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project_links">
+                <a href="#" class="github_link">View on GitHub</a>
+                <a href="#" class="demo_link">Live Demo</a>
+              </div>
+            </div>
+            <div class="card">
+              <h2 class="project_title">Coffee House Landing Page</h2>
+              <p class="project_description">
+                An interactive and fully responsive promotional landing page
+                with drink category tabs, smooth carousel animations, and a
+                modal window for customizable orders.
+              </p>
+              <div class="projects_skills">
+                <span>HTML5</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project_links">
+                <a href="#" class="github_link">View on GitHub</a>
+                <a href="#" class="demo_link">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="education-section" id="education">
+        <div class="container">
+          <h2 class="heading-2">Education</h2>
+          <div class="education_list">
+            <article class="education_item">
+              <h3>Formal Education</h3>
+              <p class="education_place">
+                University of Tashkent for Applied Science
+              </p>
+              <p class="education_description">Computer Engineering</p>
+              <p class="education_date">September 2023 — July 2027</p>
+            </article>
+            <article class="education_item">
+              <h3>Courses</h3>
+              <p class="education_place">Rolling Scopes School</p>
+              <p class="education_description">
+                RS School Short Track / JavaScript &amp; Frontend
+              </p>
+              <p class="education_date">September 2026 — Present</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="languages-section" id="languages">
+        <div class="container">
+          <h2 class="heading-2">Languages</h2>
+          <div class="languages_list">
+            <p><strong>English:</strong> <span>Pre-Intermediate (B1)</span></p>
+            <p><strong>Uzbek:</strong> <span>Native</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <h2 class="heading-2">Contact</h2>
+          <div class="contact_card">
+            <p class="contact_intro">
+              Feel free to reach out for collaborations, project inquiries, or
+              frontend discussions.
+            </p>
+            <div class="contact_links">
+              <a href="mailto:info@asqarbekdev.uz" class="contact_link">
+                <strong>Email:</strong>
+                <span>info@asqarbekdev.uz</span>
+              </a>
+              <a href="https://github.com/asqarbekolimov" class="contact_link">
+                <strong>GitHub:</strong>
+                <span>asqarbekolimov</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/asqarbekdev/"
+                class="contact_link"
+              >
+                <strong>LinkedIn:</strong>
+                <span>asqarbekdev</span>
+              </a>
+              <a href="https://t.me/asqarbekdev" class="contact_link">
+                <strong>Telegram:</strong>
+                <span>@asqarbekdev</span>
+              </a>
+              <a
+                href="https://discord.com/users/asqarbekdev"
+                class="contact_link"
+              >
+                <strong>Discord:</strong>
+                <span>@asqarbekdev</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="site-footer">
+      <div class="footer_inner">
+        <a
+          class="footer_brand"
+          href="https://rs.school/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            class="footer_course-logo"
+            src="./assets/images/rs_school_js.svg"
+            alt="Short Track"
+          />
+          <span>JS / Front-end Short Track</span>
+        </a>
+        <div class="footer_meta">
+          <a href="https://github.com/asqarbekolimov">GitHub</a>
+          <span>2026</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
