@@ -10,188 +10,240 @@
       type="image/x-icon"
     >
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="./css/style.css">
   </head>
 
   <body>
-    <div class="wrapper">
-      <header class="header">
-        <nav class="nav">
-          <div class="logo">
-            <a href="#">
-              <img src="./assets/images/logo.svg" alt="logo">
-            </a>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#code">Code Example</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#languages">Language</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="dev_avatar-section">
+        <div class="container">
+          <img
+            class="dev_avatar"
+            src="./assets/images/me.jpg"
+            alt="Asqarbek Olimov"
+          >
+          <h1 class="dev_name">Asqarbek Olimov</h1>
+          <p class="dev_major">Frontend Developer</p>
+        </div>
+      </section>
+      <section class="about-section" id="about">
+        <div class="container">
+          <h2 class="heading-2">About me</h2>
+          <p class="about_info">
+            I have a background in information technology, with a focus on
+            frontend development and UI design. I am the type of person who
+            seizes every opportunity to learn something new. That is why I enjoy
+            challenges. From there, I'm under pressure to learn quickly and gain
+            a lot of new experience.
+          </p>
+          <p class="about_info">
+            Since childhood, I have had a predisposition to work with
+            electronics and computers. I like to disassemble, assemble and
+            configure something. I can build, configure, solve problems with
+            computers.
+          </p>
+        </div>
+      </section>
+      <section class="skills-section" id="skills">
+        <div class="container">
+          <h2 class="heading-2">skills</h2>
+          <div class="card-container">
+            <div class="card">
+              <div class="skill_type">Frontend</div>
+              <ul class="skill_list">
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Tailwind CSS</li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="skill_type">Backend & Data</div>
+              <ul class="skill_list">
+                <li>Node.js</li>
+                <li>REST APIs</li>
+                <li>PostgreSQL (basics)</li>
+                <li>MongoDB</li>
+                <li>Drizzle ORM</li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="skill_type">Tools</div>
+              <ul class="skill_list">
+                <li>Git</li>
+                <li>Postman</li>
+                <li>Figma</li>
+                <li>VS Code</li>
+              </ul>
+            </div>
           </div>
-          <input type="checkbox" id="menu-toggle" class="menu-toggle">
-          <label for="menu-toggle" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <ul class="nav__lists">
-            <li class="nav__list-item"><a href="#about">About</a></li>
-            <li class="nav__list-item"><a href="#skills">Skills</a></li>
-            <li class="nav__list-item"><a href="#education">Education</a></li>
-            <li class="nav__list-item"><a href="#projects">Projects</a></li>
-            <li class="nav__list-item"><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main">
-        <div class="right__side">
-          <section class="title">
-            <figure class="avatar">
-              <img src="./assets/images/me.jpg" alt="avatar">
-            </figure>
-            <div>
-              <h1 class="name">Asqarbek Olimov</h1>
-              <p>Frontend Developer</p>
+        </div>
+      </section>
+      <section class="code-section" id="code">
+        <div class="container">
+          <h2 class="heading-2">Code Example</h2>
+          <div class="task_name">Find the Unique Number</div>
+          <div class="card code-card">
+            <pre><code>
+const numbers = [1, 2, 2, 3, 4, 4, 5];
+
+const uniqueArray = [...new Set(numbers)];
+
+console.log(uniqueArray);
+            </code></pre>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="container">
+          <h2 class="heading-2">Projects</h2>
+
+          <div class="card-container">
+            <div class="card">
+              <h2 class="project_title">CV Website</h2>
+              <p class="project_description">
+                A personal CV website built with HTML, CSS, and JavaScript,
+                showcasing my skills, projects, and contact information.
+              </p>
+              <div class="projects_skills">
+                <span>HTML5</span>
+                <span>CSS</span>
+              </div>
+              <div class="project_links">
+                <a href="https://github.com/asqarbekolimov/rsschool-cv" class="github_link">View on GitHub</a>
+                <a href="https://asqarbekolimov.github.io/rsschool-cv/" class="demo_link">Live Demo</a>
+              </div>
             </div>
-          </section>
-          <section class="about-me" id="about">
-            <h2 class="heading__text">About</h2>
-            <p>
-              I have a background in information technology, with a focus on
-              frontend development and UI design. I am the type of person who
-              seizes every opportunity to learn something new. That is why I
-              enjoy challenges. From there, I'm under pressure to learn quickly
-              and gain a lot of new experience. <br>
-              Since childhood, I have had a predisposition to work with
-              electronics and computers. I like to disassemble, assemble and
-              configure something. I can build, configure, solve problems with
-              computers.
+            <div class="card">
+              <h2 class="project_title">Coffee House Landing Page</h2>
+              <p class="project_description">
+                An interactive and fully responsive promotional landing page
+                with drink category tabs, smooth carousel animations, and a
+                modal window for customizable orders.
+              </p>
+              <div class="projects_skills">
+                <span>HTML5</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project_links">
+                <a href="https://github.com/asqarbekolimov/coffee-house" class="github_link">View on GitHub</a>
+                <a href="https://coffee-house-nu.vercel.app/" class="demo_link">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="education-section" id="education">
+        <div class="container">
+          <h2 class="heading-2">Education</h2>
+          <div class="education_list">
+            <article class="education_item">
+              <h3>Formal Education</h3>
+              <p class="education_place">
+                University of Tashkent for Applied Science
+              </p>
+              <p class="education_description">Computer Engineering</p>
+              <p class="education_date">September 2023 — July 2027</p>
+            </article>
+            <article class="education_item">
+              <h3>Courses</h3>
+              <p class="education_place">Rolling Scopes School</p>
+              <p class="education_description">
+                RS School Short Track / JavaScript &amp; Frontend
+              </p>
+              <p class="education_date">September 2026 — Present</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="languages-section" id="languages">
+        <div class="container">
+          <h2 class="heading-2">Languages</h2>
+          <div class="languages_list">
+            <p><strong>English:</strong> <span>Pre-Intermediate (B1)</span></p>
+            <p><strong>Uzbek:</strong> <span>Native</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <h2 class="heading-2">Contact</h2>
+          <div class="contact_card">
+            <p class="contact_intro">
+              Feel free to reach out for collaborations, project inquiries, or
+              frontend discussions.
             </p>
-          </section>
-          <section class="skills" id="skills">
-            <h2 class="heading__text">Skills</h2>
-            <ol class="skills__list">
-              <li>Engineering</li>
-              <li>Knowledge about ServiceNow administration.</li>
-              <li>Figma, Git, Webpack</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>SCSS</li>
-              <li>Tailwind CSS</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>React</li>
-              <li>Nodejs basics</li>
-              <li>English - B1.</li>
-            </ol>
-          </section>
-          <section class="code" id="code">
-            <h2 class="heading__text">Code</h2>
-            <pre>
-              <code>
-                let hardWork;
-                if(hardWork == true){
-                alert("Become the best developer")
-                }else{
-                alert("You will never be the best programmer")
-                }
-              </code>
-            </pre>
-          </section>
-          <section class="code" id="projects">
-            <h2 class="heading__text">Projects</h2>
-            <div class="projects__container">
-              <div class="project_card">
-                <img
-                  class="project_image"
-                  src="./assets/images/pr-1.png"
-                  alt="project image"
-                >
-                <h3 class="project_title">Token Creator</h3>
-                <div class="project_link">
-                  <a
-                    href="https://token-creator-six.vercel.app/"
-                    target="_blank"
-                    >Demo</a
-                  >
-                </div>
-              </div>
-              <div class="project_card">
-                <img
-                  class="project_image"
-                  src="./assets/images/pr-2.png"
-                  alt="project image"
-                >
-                <h3 class="project_title">CMS Blog</h3>
-                <div class="project_link">
-                  <a href="https://blog.asqarbekdev.uz/" target="_blank"
-                    >Demo</a
-                  >
-                </div>
-              </div>
-              <div class="project_card">
-                <img
-                  class="project_image"
-                  src="./assets/images/pr-3.png"
-                  alt="project image"
-                >
-                <h3 class="project_title">Open Case</h3>
-                <div class="project_link">
-                  <a href="https://asqarbekdev.uz/projects" target="_blank"
-                    >Demo</a
-                  >
-                </div>
-              </div>
+            <div class="contact_links">
+              <a href="mailto:info@asqarbekdev.uz" class="contact_link">
+                <strong>Email:</strong>
+                <span>info@asqarbekdev.uz</span>
+              </a>
+              <a href="https://github.com/asqarbekolimov" class="contact_link">
+                <strong>GitHub:</strong>
+                <span>asqarbekolimov</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/asqarbekdev/"
+                class="contact_link"
+              >
+                <strong>LinkedIn:</strong>
+                <span>asqarbekdev</span>
+              </a>
+              <a href="https://t.me/asqarbekdev" class="contact_link">
+                <strong>Telegram:</strong>
+                <span>@asqarbekdev</span>
+              </a>
+              <a
+                href="https://discord.com/users/asqarbekdev"
+                class="contact_link"
+              >
+                <strong>Discord:</strong>
+                <span>@asqarbekdev</span>
+              </a>
             </div>
-          </section>
+          </div>
         </div>
-        <div class="left__side">
-          <section id="contact" class="contact">
-            <h2 class="heading__text">Contact</h2>
-            <ul class="contact__list">
-              <li>
-                Mail: <br>
-                <a href="mailto:info@asqarbekdev.uz">info@asqarbekdev.uz</a>
-              </li>
-              <li>
-                Github: <br>
-                <a href="https://github.com/asqarbekolimov">@asqarbekolimov</a>
-              </li>
-              <li>
-                Telegram: <br>
-                <a href="https://asqarb3k.t.me">@asqarb3k</a>
-              </li>
-            </ul>
-          </section>
-          <section class="education" id="education">
-            <h2 class="heading__text">Education</h2>
-            <ul class="education__list">
-              <li>
-                <h3>2021 - 2022</h3>
-                <p>Frontend Development</p>
-                <p>Mohirdev</p>
-              </li>
-              <li>
-                <h3>2023 - 2028</h3>
-                <p>University of Tashkent for Applied Sciences</p>
-                <p>Computer Engineering</p>
-              </li>
-            </ul>
-          </section>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer_inner">
+        <a
+          class="footer_brand"
+          href="https://rs.school/courses/short-track"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            class="footer_course-logo"
+            src="./assets/images/rs_school_js.svg"
+            alt="Short Track"
+          >
+          <span>JS / Front-end Short Track</span>
+        </a>
+        <div class="footer_meta">
+          <a href="https://github.com/asqarbekolimov">GitHub</a>
+          <span>2026</span>
         </div>
-      </main>
-      <footer class="footer">
-        <div class="footer__link">
-          <a href="https://github.com/asqarbekolimov">
-            <img src="./assets/images/github-logo.svg" alt="github"><span
-              >Github</span
-            >
-          </a>
-        </div>
-        <p>© 2026 The Rolling Scopes</p>
-        <div class="footer__link">
-          <a href="https://rs.school/courses/short-track">
-            <img src="./assets/images/rs_school_js.svg" alt="github">
-          </a>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
