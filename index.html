@@ -102,13 +102,13 @@
           <h2 class="heading-2">Code Example</h2>
           <div class="task_name">Find the Unique Number</div>
           <div class="card code-card">
-            <pre><code>let hardWork;
+            <pre><code>
+const numbers = [1, 2, 2, 3, 4, 4, 5];
 
-if (hardWork === true) {
-  alert("Become the best developer");
-} else {
-  alert("You will never be the best programmer");
-}</code></pre>
+const uniqueArray = [...new Set(numbers)];
+
+console.log(uniqueArray);
+            </code></pre>
           </div>
         </div>
       </section>
@@ -118,20 +118,18 @@ if (hardWork === true) {
 
           <div class="card-container">
             <div class="card">
-              <h2 class="project_title">Coffee House Landing Page</h2>
+              <h2 class="project_title">CV Website</h2>
               <p class="project_description">
-                An interactive and fully responsive promotional landing page
-                with drink category tabs, smooth carousel animations, and a
-                modal window for customizable orders.
+                A personal CV website built with HTML, CSS, and JavaScript,
+                showcasing my skills, projects, and contact information.
               </p>
               <div class="projects_skills">
                 <span>HTML5</span>
                 <span>CSS</span>
-                <span>JavaScript</span>
               </div>
               <div class="project_links">
-                <a href="#" class="github_link">View on GitHub</a>
-                <a href="#" class="demo_link">Live Demo</a>
+                <a href="https://github.com/asqarbekolimov/rsschool-cv" class="github_link">View on GitHub</a>
+                <a href="https://asqarbekolimov.github.io/rsschool-cv/" class="demo_link">Live Demo</a>
               </div>
             </div>
             <div class="card">
@@ -147,8 +145,8 @@ if (hardWork === true) {
                 <span>JavaScript</span>
               </div>
               <div class="project_links">
-                <a href="#" class="github_link">View on GitHub</a>
-                <a href="#" class="demo_link">Live Demo</a>
+                <a href="https://github.com/asqarbekolimov/coffee-house" class="github_link">View on GitHub</a>
+                <a href="https://coffee-house-nu.vercel.app/" class="demo_link">Live Demo</a>
               </div>
             </div>
           </div>
@@ -230,7 +228,7 @@ if (hardWork === true) {
       <div class="footer_inner">
         <a
           class="footer_brand"
-          href="https://rs.school/"
+          href="https://rs.school/courses/short-track"
           target="_blank"
           rel="noreferrer"
         >
