@@ -4,7 +4,7 @@
 
 **Discord:** @asqarbekdev
 
-**Telegram:** @asqarb3k
+**Telegram:** @asqarbekdev
 
 **Email:** asqarbekdev@gmail.com
 
